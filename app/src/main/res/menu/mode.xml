@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item
+                android:title="모드"
+                >
+                <menu>
+                        <item
+                            android:title="선"
+                            android:id="@+id/line">
+                        </item>
+                        <item
+                            android:title="사각형"
+                            android:id="@+id/square">
+                        </item>
+                        <item
+                            android:title="원"
+                            android:id="@+id/circle">
+                        </item>
+                        <item
+                            android:title="초기화"
+                            android:id="@+id/clear">
+                        </item>
+                </menu>
+        </item>
+</menu>
