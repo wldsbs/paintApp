@@ -336,7 +336,6 @@ public class MyGraphicView extends View implements View.OnTouchListener{
         this.lineWith = lineWith;
     }
 
-
     public void setMode(int curShape) {
         this.curShape = curShape;
     }
@@ -344,7 +343,7 @@ public class MyGraphicView extends View implements View.OnTouchListener{
     public void setTEXT(String text){
         this.text = text;
         Paint paint = new Paint();
-        paint.setTextSize(150);
+        paint.setTextSize(70);
         paint.setColor(color);
         paints.add(new MyPaint(500,500,50,50,TEXT,paint));
         invalidate();

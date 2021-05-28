@@ -258,7 +258,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 View Myview = mg.getView();
                 Myview.setDrawingCacheEnabled(true);
                 Bitmap screenshot = Myview.getDrawingCache(); //스샷 형태로 저장
-                File file = new File(Environment.getExternalStorageDirectory()+"/Pictures", "scr.png");
+                File file = new File(Environment.getExternalStorageDirectory()+"", "scr.png");
                 FileOutputStream fos = null;
                 try {
                     fos = new FileOutputStream(file);
@@ -275,7 +275,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Myview.setDrawingCacheEnabled(false);
                 return true;
             case R.id.load:
-                Bitmap picture = BitmapFactory.decodeFile("/sdcard/Pictures/scr.png");
+                Bitmap picture = BitmapFactory.decodeFile("/sdcard/scr.png");
                 mg.addImage(picture);
                 return true;
         }

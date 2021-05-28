@@ -5,77 +5,67 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity"
-    >
-
-
+    tools:context=".MainActivity">
     <LinearLayout
         android:id="@+id/pictureLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
     </LinearLayout>
-
     <view class="com.example.paint.MyGraphicView"
     android:id="@+id/drawingView"
     android:layout_width="match_parent"
     android:layout_height="match_parent" />
-
     <TableLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        >
-
-
+        android:layout_gravity="center_horizontal">
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
-
+            android:layout_height="wrap_content">
             <ImageButton
-            android:id="@+id/eraserBtn"
-            android:layout_width="55dp"
-            android:layout_height="55dp"
-            android:scaleType="centerInside"
-            android:text="지우개"
-            />
-
+                android:id="@+id/eraserBtn"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:scaleType="centerInside"
+                android:text="지우개"
+                android:src="@drawable/save" />
             <ImageButton
                 android:id="@+id/textBtn"
                 android:layout_width="55dp"
                 android:layout_height="55dp"
                 android:scaleType="centerInside"
-                android:text="문자" />
-
+                android:text="문자"
+                android:src="@drawable/font"
+                />
             <ImageButton
                 android:id="@+id/loadBtn"
                 android:layout_width="65dp"
                 android:layout_height="55dp"
                 android:scaleType="centerInside"
-                android:text="불러오기" />
-
+                android:text="불러오기"
+                android:src="@drawable/picture"/>
             <ImageButton
-            android:id="@+id/modeBtn"
-            android:layout_width="55dp"
-            android:layout_height="55dp"
-            android:scaleType="centerInside"
-            android:text="모드" />
-
+                android:id="@+id/modeBtn"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:scaleType="centerInside"
+                android:text="모드"
+                android:src="@drawable/edit"/>
             <ImageButton
                 android:id="@+id/moveBtn"
                 android:layout_width="55dp"
                 android:layout_height="55dp"
                 android:scaleType="centerInside"
-                android:text="이동" />
-
+                android:text="이동"
+                android:src="@drawable/move"/>
             <ImageButton
                 android:id="@+id/filterBtn"
                 android:layout_width="55dp"
                 android:layout_height="55dp"
                 android:scaleType="centerInside"
-                android:text="필터" />
-
+                android:text="필터"
+                android:src="@drawable/option"/>
             <!--ImageButton
                 android:id="@+id/eraserBtn"
                 android:layout_width="55dp"
@@ -119,40 +109,30 @@
                 android:scaleType="centerInside"
                 android:src="@drawable/option" />
                 -->
-
         </TableRow>
-
         <FrameLayout
             android:layout_height="match_parent"
             android:layout_width="match_parent">
-
             <LinearLayout
                 android:id="@+id/textLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:visibility="gone">
-
                 <EditText
                     android:id="@+id/editText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:hint="출력할 텍스트를 입력해주세요."
-                    >
+                    android:hint="출력할 텍스트를 입력해주세요.">
                 </EditText>
-
                 <Button
                     android:id="@+id/finTextBtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="입력"></Button>
-
             </LinearLayout>
         </FrameLayout>
-
     </TableLayout>
-
-
     <TableLayout
         android:id="@+id/hideFilter"
         android:layout_width="match_parent"
@@ -162,13 +142,12 @@
         <TableRow
             android:id="@+id/brightFilter"
             android:layout_height="wrap_content"
-            android:padding="20dp"
-            >
+            android:padding="20dp">
             <TextView
                 android:text="밝기"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                ></TextView>
+                android:layout_height="wrap_content">
+            </TextView>
             <SeekBar
                 android:id="@+id/brightBar"
                 android:layout_width="0dp"
@@ -181,13 +160,11 @@
         <TableRow
             android:id="@+id/blurFilter"
             android:layout_height="wrap_content"
-            android:padding="20dp"
-            >
+            android:padding="20dp">
             <TextView
                 android:text="블러링"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                >
+                android:layout_height="wrap_content">
             </TextView>
             <SeekBar
                 android:id="@+id/blurBar"
@@ -199,6 +176,4 @@
                 tools:ignore="ButtonStyle,HardcodedText"/>
         </TableRow>
     </TableLayout>
-
-
 </FrameLayout>
